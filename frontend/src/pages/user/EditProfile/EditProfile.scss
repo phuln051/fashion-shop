@@ -1,0 +1,120 @@
+.container-infomation{
+    position: relative;
+    justify-content: center;
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container-form {
+        max-width: 800px;
+       position: relative;
+       left: 50%;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        align-items: center;
+    }
+    .form-infomation{
+        align-items: center;
+    }
+    .title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .col-edit {
+        flex: 1;
+        padding: 10px 10px;
+    }
+    .col-2-edit{
+        padding: 0px 10px;
+    }
+    .input-group {
+        margin-bottom: 20px;
+    }
+    
+    .label-text {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .text-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Đảm bảo phần padding không tăng kích thước của phần tử */
+    }
+    .add-input {
+        width: 100%;
+        padding: 10px ;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Đảm bảo phần padding không tăng kích thước của phần tử */
+    }
+    
+    .tel-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .email-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .date-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .file-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    .button-form{
+        text-align: center;
+    }
+    .button-form button{
+        width: 30%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #B23140;
+        color: #fff;
+    }
+    
+    
+    .button-form button:hover{
+        background-color: #fff;
+        color: #B23140;
+        border: 1px solid #B23140;
+    }
+    
+    .button-form button:focus{
+        outline: none;
+    }
+    
+}

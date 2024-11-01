@@ -1,0 +1,82 @@
+// UserProfile.scss
+
+#personal-info {
+    .profile-details {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      justify-content: center;
+      width: 800px;
+  
+      .profile-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+  
+        .profile-avatar {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 20px;
+        }
+  
+        .profile-name {
+          font-size: 24px;
+          font-weight: bold;
+          color: #333;
+        }
+      }
+  
+      .content-container {
+        .thongtin-container {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+  
+          .thongtin {
+            flex: 1;
+  
+            .detail {
+              margin-bottom: 10px;
+  
+              .label {
+                font-weight: bold;
+                color: #555;
+              }
+  
+              .value {
+                color: #333;
+              }
+            }
+          }
+        }
+  
+        .change-info {
+          text-align: right;
+  
+          .change-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+  
+            &:hover {
+              background-color: #0056b3;
+            }
+  
+            a {
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  

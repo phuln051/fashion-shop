@@ -1,0 +1,260 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.checkout-container {
+    display: flex;
+    width: 1300px;
+    justify-content: space-between;
+    height: auto;
+    margin: auto;
+.billing-address{
+    justify-content: s;
+    width: 50%; 
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: -10px;
+}
+
+.order-summary {
+    margin-right: 10px;
+    background-color: #007bff;
+
+    width: 40%;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 1px solid;
+    height: auto;
+}
+
+.order-summary h2 {
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.order-items .order-header, 
+.order-items .order-row, 
+.subtotal, 
+.total {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.order-items .order-header {
+    font-weight: bold;
+}
+
+.shipping-method {
+    padding: 10px 0;
+}
+
+.shipping-method span {
+    font-weight: bold;
+}
+
+.shipping-method label {
+    display: block;
+    margin: 5px 0;
+}
+
+.shipping-method input[type="radio"] {
+    margin-right: 10px;
+}
+
+.total {
+    padding-top: 20px;
+    font-weight: bold;
+    color: #B23140;
+}
+
+.order-button {
+    width: 100%;
+    background: #B23140;
+    color: #fff;
+    border: none;
+    
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.order-button:hover {
+    background: #B23140;
+}
+
+
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.form1 {
+    width: 100%;
+}
+
+.form1 input {
+    width: 50%;
+    height: 35px;
+}
+
+.form2 {
+    max-width: 500px;
+    justify-content: space-between;
+    display: flex;
+    height: 200px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.trai {
+    width: 50%;
+    float: left;
+}
+
+.phai {
+    width: 50%;
+    float: left;
+    margin-left: 75px;
+}
+
+.phai input {
+    width: 130%;
+    height: 35px;
+}
+
+.trai input {
+    width: 130%;
+    height: 35px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.order-summary .product,
+.order-summary .total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+.additional-info {
+    background: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    padding: 15px;
+    margin-top: 20px;
+    
+    
+}
+
+.additional-info h2 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.additional-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.additional-info textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    height: 80px;
+    resize: vertical;
+}
+
+.additional-info label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.additional-info input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.cracc {
+    display: flex;
+}
+
+.cracc label {
+    margin-top: 5px;}
+/* } payment */
+.payment-method {
+    margin-top: 20px;
+}
+
+.payment-method h2 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-option {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    align-items: center;
+    cursor: pointer;
+    width: 200px;
+}
+
+.payment-option label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.payment-icon {
+  
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.cash{
+    margin-left: 60px;
+    font-size: 50px;
+}
+.bank{
+    margin-left: 60px;
+    font-size: 50px;
+}
+}

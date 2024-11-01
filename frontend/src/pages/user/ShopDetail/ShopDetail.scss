@@ -1,0 +1,560 @@
+.container-shopdetail{
+    margin: auto;
+    max-width:  1300px;
+    justify-content: space-between;
+}
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .Container-duongDan{
+        align-items: center;
+        width: 100%;
+        position: absolute;
+    }
+    .duongDan{
+        width: 20%;
+        position: relative;
+        float: left;
+        margin-left: -30px;
+    }
+    .duongDan a {
+        text-decoration: none;
+        color: hsl(0, 0%, 33%);
+        margin-left: 30px;
+    }
+    
+    .productContainer {
+        justify-content: space-between;
+        display: flex;
+        width: 1300px;
+        height: 100%;
+    }
+    
+    .prdTrai {
+        float: left;
+        width: 50%;
+        text-align: center;
+    }
+    
+    .traiTop {
+        float: left;
+        width: 50%;
+        height: 490px;
+        
+    }
+    
+    .traiTop img {
+        max-width: 590px;
+        height: 480px;
+    }
+    
+    .traiBot {
+        margin-top: 10px;
+        display: flex;
+        max-width: 520px;
+        height: 110px;
+    
+    }
+    
+    .traiBot img {
+        width: 110px;
+        margin-left: 5px;
+        height: 100px;
+        
+    }
+    
+    /* bên phải */
+    .prdPhai {
+        margin-top: 40px;
+        float: left;
+        width: 50%;
+        height: auto;
+        position: relative;
+    }
+    
+    .productPanel {
+        width: 100%;
+        height: auto;
+    }
+    
+    .prdName {
+        font-size: 25px;
+        color: #000;
+        font-weight: bold;
+    }
+    
+    .prdGia {
+        width: 100%;
+    }
+    
+    .giaKm {
+        width: 50%;
+        float: left;
+        color: red;
+    }
+    
+    .giaGoc {
+        width: 50%;
+        float: left;
+        text-decoration: line-through;
+    }
+    
+    .giaGoc p {
+        margin-left: -50px;
+    }
+    
+    .prdChitiet {
+        width: 100%;
+        font-size: 15px;
+        font-weight: 500;
+        height: auto;
+    }
+    
+    .vatLieu,
+    .kichThuoc,
+    .ma {
+        margin-top: 20px;
+    }
+    
+    .quantityContainer {
+        margin-top: 20px;
+    
+        display: flex;
+        align-items: center;
+    }
+    
+    .quantityAdjuster {
+        display: flex;
+        margin-right: 10px;
+    }
+    
+    .quantityAdjuster button,
+    .quantityAdjuster input {
+        border: 1px solid #000;
+        background: #fff;
+        text-align: center;
+        height: 30px;
+        margin: 0;
+        width: 30px;
+    }
+    
+    .quantityAdjuster button {
+        width: 30px;
+        cursor: pointer;
+    }
+    
+    .quantityAdjuster input {
+        width: 80px;
+        height: 26px;
+        margin-left: 20px;
+        border-radius: 10px;
+    }
+    
+    .buttons button {
+    
+        background-color: #B23140;
+        color: #fff;
+        border: none;
+        margin-right: 30px;
+        margin-top: 10px;
+        cursor: pointer;
+        height: 35px;
+        border-radius: 8px;        border:  1px solid #B23140 ;
+
+        
+    }
+    .buttons {
+        margin-left: 0;
+    }
+    
+    .buyNow {
+        background-color: #B23140;
+        cursor: pointer; 
+
+        
+      }
+    .buyNow a{
+        color: #fff;
+        text-decoration: none;
+        
+    }
+      .buyNow:hover  {
+        
+        background-color: #fff;
+        border:  1px solid #B23140 ;
+     
+      }
+      .buyNow:hover a{
+        color: #B23140; 
+        text-decoration: none;
+      }
+    
+    .buttons button.second-button:hover {
+        background-color: #fff; 
+        color: #B23140; 
+        border:  1px solid #B23140 ;
+    }   
+    
+    .tabs {
+        text-align: left;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        height: auto;
+        margin-top: 15px;
+    }
+    
+    /* Style cho tabButton */
+    .tabButton {
+      height: 30px;
+     width: 120%;
+      margin-right: 10px;
+      padding-top: 5px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 14px;
+      background-color: #fff;
+      text-decoration: none; /* Xóa gạch chân của liên kết */
+      color: black; /* Màu chữ cho liên kết */
+      border: 1px solid #ccc;
+      outline: none; /* Xóa viền focus */
+    }
+    
+    /* Hover và active style cho tabButton */
+    .tabButton:hover, .tabButton:target {
+      color: #B23140;
+      border: 1px solid #B23140;
+      text-decoration: none;
+    }
+    
+    /* Style chung cho tabContent */
+    .tabContent {
+      display: none; /* Ẩn mặc định tất cả nội dung tab */
+      margin: 6px 10px;
+      height: 100%;
+    }
+    
+    /* Hiển thị tabContent dựa vào :target */
+    :target {
+      display: block;
+      
+    }
+    /* Nếu không có tab nào được chọn, hiển thị tab đầu tiên */
+    .tabContent:first-of-type {
+      display: block;
+    }
+    .tabs:target .tabContent:first-of-type {
+      display: none; /* Ẩn tab đầu tiên khi một tab khác được chọn */
+    }
+    .den {
+        color: #0a0909;
+        font-weight: bold;
+    }
+    
+    .trang {
+        color: #555;
+    }
+    
+    /* Các sản phẩm */
+    .products {
+        margin: auto;
+        max-width: 1300px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+    
+    .product-item {
+        width: calc(25% - 20px);
+        height: 400px;
+        border: 1px solid transparent;
+        transition: border 0.3s ease, transform 0.3s ease;
+        position: relative;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+    }
+    
+    
+    .add-to-cart,
+    .view-more {
+      position: relative;
+      z-index: 1; /* Đảm bảo các nút này nằm trên các lớp phủ */
+    }
+    
+    .product-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 400px;
+      border: 2px solid transparent;
+      transition: border-color 0.3s ease;
+      z-index: 0; /* Thiết lập z-index của lớp phủ màu */
+    }
+    
+    .product-item:hover::before {
+      border-color: rgb(218, 213, 213);
+    }
+    
+    .product-card {
+        width: 100%; /* Đảm bảo phần thẻ sản phẩm chiếm toàn bộ chiều rộng của sản phẩm */
+        border-radius: 4px;
+        overflow: hidden;
+        background: #FFF;
+    }
+    
+    .product-image {
+        position: relative;
+        width: 100%;
+        height: 200px;
+    }
+    
+    .product-image img {
+        position: absolute;
+        width: 90%;
+        margin-top: 5px;
+        height: 100%;
+        transition: opacity 0.5s ease-in-out;
+       left: 50%;
+       transform: translate(-50%);
+    }
+    
+    .product-image .default-image {
+        opacity: 1;
+    }
+    
+    .product-image .hover-image {
+        opacity: 0;
+    }
+    
+    .product-item:hover .default-image {
+        opacity: 0;
+    }
+    
+    .product-item:hover .hover-image {
+        opacity: 1;
+    }
+    
+    .discount-tag {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        background-color: red;
+        color: white;
+        padding: 5px;
+        border-radius: 3px;
+        font-size: 0.875em;
+    }
+    
+    .product-info {
+        padding: 15px;
+    }
+    
+    .product-name p {
+        float: left;
+        margin-top: -10px;
+        font-size: 15px;
+        height: 70px;
+        width: 220px;
+        line-height: 1.5;
+    }
+    
+    .add-like {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .add-like button {
+        position: absolute;
+        top: 0;
+        left: -50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .add-like:hover button {
+        opacity: 1;
+    }
+    
+    .product-price {
+        text-align: right;
+        margin-top: 10px;
+    }
+    
+    .sale-price {
+        font-size: small;
+        color: red;
+        font-weight: bold;
+        margin-bottom: 3px;
+    }
+    
+    .price-container {
+        text-align: right;
+    }
+    
+    .original-price {
+        text-decoration: line-through;
+        font-size: small;
+        display: block;
+        color: grey;
+        margin-top: 10px;
+    }
+    .original-price{
+        transform: translateY(-10px); // Dịch chuyển lên trên 10px
+      }
+      .sale-price {
+        transform: translateY(-10px); // Dịch chuyển lên trên 10px
+    }
+    
+    
+    .add-to-cart {
+        width: 125px;
+        height: 36px;
+        margin-right: 20px;
+        display: none;
+        background-color: #B23140;
+        font-size: 13px;
+        color: #FFF;
+    }
+    
+    .view-more {
+        width: 125px;
+        height: 36px;
+        display: none;
+    }
+    
+    .product-item:hover .view-more,
+    .product-item:hover .add-to-cart {
+        display: inline;
+    }
+    
+      
+    .add-to-cart {
+        max-width: 50%;
+        height: 36px;
+        margin-right: 20px;
+        display: none;
+        background-color: #B23140;
+        font-size: 15px;
+        color: #FFF;
+        border: none;
+        border-radius: 7%;
+        right: auto;
+      }
+    
+      .add-to-cart:hover {
+        background: none;
+        color: #B23140;
+        border: 2px solid #B23140;
+      }
+    
+      .view-more {
+        max-width: 50%;
+        height: 36px;
+        display: none;  
+        border: 1px solid #B23140;
+        border-radius: 7%;
+        background: none;
+      }
+    
+      .view-more a {
+        color: #B23140;
+        font-size: 14px;
+      }
+    
+      .product-item:hover .view-more,
+      .product-item:hover .add-to-cart {
+        display: inline;
+      }
+      .add-to-cart:hover + .view-more {
+        background-color: #B23140;
+        border-color: #B23140; 
+        color: #FFF; 
+      }
+      .add-to-cart:hover + .view-more a {
+      
+        color: #FFF; 
+      }
+      
+    
+    .relatedProducts {
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .details-product {
+        display: flex;
+    }
+    .title-container {
+        width: 1300px;
+        display: flex;
+        position: absolute;
+        
+       }
+       
+       .title-text {
+         color: black;
+         font-size: 24px; /* Adjust the size as needed */
+         width: 300px;
+         float: left;
+         margin-top: -20px;
+        
+       }
+       
+       .line {
+         border: none;
+         height: 1px;
+         background-color: black;
+         width: 990px;
+         float: left;
+         margin-top: -5px;
+         position: relative;
+
+       }
+    
+    .pagination-container {
+        display: flex;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .pagination-step,
+      .pagination-arrow {
+        display: inline-block;
+        padding: 8px 16px;
+        margin: 0 4px;
+        border-radius: 100%;
+        border: 2px solid orange;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      
+      .pagination-step.active {
+        background-color: orange;
+        color: white;
+      }
+      
+      .pagination-arrow {
+        border: none;
+        background-color: transparent;
+        color: orange;
+      }
+      
+      /* Hover effects */
+      .pagination-step:hover:not(.active),
+      .pagination-arrow:hover {
+        background-color: orange;
+        color: white;
+      }
+      
+    
+    
+    

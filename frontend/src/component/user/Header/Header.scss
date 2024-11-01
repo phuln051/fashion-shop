@@ -1,0 +1,224 @@
+.container-header{
+  .header-top {
+    background-color: orangered; /* Màu nền của header-top */
+    border-bottom: 1px solid #eaeaea; /* Viền dưới của header-top */
+    padding: 5px 0; /* Khoảng cách nội dung với viền của header-top */
+    position: relative;
+    color: #ffffff;
+    
+    .header-top-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1300px;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+  
+      .header-top_left {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 0px;
+        font-size: 16px;
+        color: #ffffff;
+        
+        .phone-icon-flag {
+          margin-right: 20px; /* Khoảng cách giữa các phần tử trong header-top_left */
+          
+          i {
+            margin-right: 5px; /* Khoảng cách giữa icon và số điện thoại */
+          }
+        }
+        
+        .menu-item {
+          margin-right: 20px; /* Khoảng cách giữa các mục menu */
+          font-size: 16px; /* Kích thước chữ của các mục menu */
+          color: #fff; /* Màu chữ của các mục menu */
+          
+          &:last-child {
+            margin-right: 0; /* Không có khoảng cách ở mục menu cuối cùng */
+          }
+        }
+      }
+      
+      .header-top_right {
+        display: flex;
+        align-items: center;
+        color: #fff;
+      
+        img {
+          margin-right: 10px; 
+          color: #fff;
+        }
+      
+        .navbar-nav {
+          display: flex;
+          align-items: center;
+          margin-left: 30px;
+          color: #fff;
+      
+          .acount {
+            display: flex; 
+            align-items: center; 
+      
+            .nav-item {
+              margin-right: 10px; /* Khoảng cách giữa các mục trong acount */
+              color: #fff; /* Màu chữ của các mục */
+              text-decoration: none; /* Loại bỏ gạch chân */
+      
+              &:last-child {
+                margin-right: 0; /* Không có khoảng cách ở mục cuối cùng */
+              }
+            }
+          }
+        }
+      }
+      
+    }
+  }
+  
+  .header-menu {
+    background-color: #ffffff;
+    position: relative; /* Đảm bảo menu luôn ở vị trí cố định trên cùng của trang */
+    top: 0; /* Đặt menu ở đầu trang */
+    width: 100%; /* Chiều rộng menu bằng với chiều rộng của trang */
+    z-index: 1000; /* Đảm bảo menu hiển thị trên các phần tử khác */
+    
+    .navbar {
+      /* Giữ nguyên các thuộc tính cho navbar */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1300px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 0px;
+      height: 100px;
+  
+      .header-menu-left {
+        /* Giữ nguyên các thuộc tính cho header-menu-left */
+        position: absolute;
+        left: -40px;
+      }
+  
+      .header-menu-center {
+        /* Giữ nguyên các thuộc tính cho header-menu-center */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        color: black;
+  
+        li {
+          /* Giữ nguyên các thuộc tính cho mỗi list item */
+          margin-right: 20px;
+          list-style: none;
+  
+          &:last-child {
+            margin-right: 0;
+          }
+          .header-menu-title {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 300px;
+          }
+        }
+      }
+  
+      .header-menu-right {
+        /* Giữ nguyên các thuộc tính cho header-menu-right */
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0px;
+  
+        input[type="text"] {
+          /* Giữ nguyên các thuộc tính cho input[type="text"] */
+          padding: 8px 12px;
+          border: 1px solid #333;
+          border-radius: 20px;
+          margin-right: 10px;
+          font-size: 14px;
+          color: #333;
+          outline: none;
+          transition: border-color 0.3s ease;
+  
+          &:focus {
+            border-color: orangered;
+          }
+        }
+  
+        .cart {
+          /* Giữ nguyên các thuộc tính cho cart */
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: #333;
+          margin-left: 10px;
+          font-size: 16px;
+  
+          &:hover {
+            color: orangered;
+          }
+        }
+  
+        .cart-count {
+          /* Giữ nguyên các thuộc tính cho cart-count */
+          color: #333;
+          width: 18px;
+          height: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+          margin-left: -3px;
+          margin-top: -10px;
+          &:hover {
+            color: orangered;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  .submenu {
+    position: absolute; /* Tạo hiệu ứng dropdown */
+    top: 100%; /* Đặt menu con ở dưới menu cha */
+    left: 150px; /* Đặt menu con bắt đầu từ vị trí bên trái của menu cha */
+    background-color: #fff; /* Màu nền của menu con */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Đổ bóng cho menu con */
+    display: none; /* Ẩn menu con mặc định */
+  
+    .submenu-row {
+      padding: 10px; /* Khoảng cách nội dung với viền của menu con */
+      display: flex;
+      flex-direction: column; /* Hiển thị các mục con theo chiều dọc */
+    }
+  
+    a {
+      color: #333; /* Màu chữ của các mục menu con */
+      text-decoration: none; /* Loại bỏ gạch chân cho các mục menu con */
+      margin-right: 10px; /* Khoảng cách giữa các mục menu con */
+      margin-bottom: 5px; /* Khoảng cách giữa các hàng */
+      white-space: nowrap; /* Ngăn các mục menu con chuyển dòng */
+    }
+  }
+  
+  /* Hiển thị menu con khi hover hoặc focus vào menu cha */
+  .header-menu-center li:hover .submenu,
+  .header-menu-center li:focus-within .submenu {
+    display: block; /* Hiển thị menu con */
+  }
+  &.scrolled {
+    .header-menu{
+      position: fixed;
+    }
+  }
+  
+}

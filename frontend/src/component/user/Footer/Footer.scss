@@ -1,0 +1,86 @@
+.container-footer {
+  width: 100%;
+  position: relative;
+  background-color: #DDDDE6;
+
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Chia footer thành 4 cột bằng nhau */
+  gap: 20px; /* Khoảng cách giữa các cột */
+  max-width: 1300px; /* Đảm bảo footer không vượt quá chiều rộng của trang */
+  margin: 0 auto; /* Canh giữa footer trên trang */
+}
+
+.footer-section h4 {
+  border-bottom: 2px solid #d60000; /* Tạo đường gạch chân cho tiêu đề */
+  display: inline-block; /* Cho phép đường gạch chân phù hợp với chiều rộng của văn bản */
+  padding-bottom: 5px; /* Padding giữa văn bản và đường gạch chân */
+  margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+  color: #333; /* Màu văn bản tiêu đề */
+  margin-top: 20px;
+}
+
+.footer-section ul {
+  list-style: none; /* Loại bỏ các điểm liệt kê mặc định */
+  padding: 0; /* Loại bỏ padding mặc định của ul */
+  color: #333;
+  line-height: 20px;
+}
+.btn-submit{
+  justify-content: center;
+  position: relative;
+}
+.footer-section ul p{
+  line-height: 30px;
+}
+.btn-email input[type="email"],
+.btn-submit button {
+  padding: 10px; /* Padding bên trong input và button */
+  border: 1px solid #b6a4a4; /* Màu viền để phù hợp với chủ đề */
+  width: 90%; /* Độ rộng đầy đủ của phần tử cha */
+  
+}
+.btn-submit button {
+  position: relative;
+  background-color: #d60000; /* Màu nền của button */
+  color: white; /* Màu văn bản của button */
+  border: none; /* Loại bỏ viền mặc định */
+  cursor: pointer; /* Thay đổi con trỏ thành dạng chỉ tay khi di chuột qua */
+  width: 80px; /* Độ rộng của button */
+  right: 0px;
+}
+
+.footer-bottom {
+  grid-column: span 4; /* Chiếm toàn bộ 4 cột */
+  background-color: #DDDDE6; /* Màu nền của footer bottom */
+  color: black; /* Màu văn bản của footer bottom */
+  text-align: center; /* Căn giữa văn bản */
+  padding: 10px 0; /* Padding bên trong footer bottom */
+}
+
+
+.footer-section i {
+  margin-right: 35px; /* Điều chỉnh khoảng cách giữa các biểu tượng */
+  font-size: 18px;
+}
+.footer-logo{
+  margin-top: 20px;
+}
+.header-follow{
+  margin-top: 20px;
+  
+
+}
+.information{
+  line-height: 18px;
+}
+.submit-email{
+  display: flex;
+  position: relative;
+}
+.header-follow-icons{
+  margin-left: 20px;
+}
+
+}

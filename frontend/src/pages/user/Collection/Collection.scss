@@ -1,0 +1,91 @@
+.container-collection {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.container-bst {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.bst-left {
+    width: 18%;
+    float: left;
+    background-color: #fff8f8;
+    height: max-content;
+    
+    
+
+}
+
+.bst-title {
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(to right, #dd8e44 2%, transparent 2%);
+    height: 25px;
+}
+
+.bst-title h2 {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.bst-list {
+    max-width: 100%;
+}
+
+.bst-list ul li {
+    padding: 20px 0 0 0;
+    list-style-type: none;
+
+}
+
+.bst-list ul li a {
+    text-decoration: none;
+    font-size: 18px;color: rgb(73, 68, 68);
+
+}
+
+
+.bst-right {
+    width: 70%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bst-right-box {
+    width: 48%;
+    margin-right: 5px;
+}
+
+.bst-name {
+    width: 100%;
+}
+
+.bst-name h2 {
+    font-size: 18px;
+
+}
+
+.bst-gioithieu {
+    width: 100%;
+    float: left;
+}
+
+.bst-gioithieu p {
+    font-size: 14px;
+    text-align: left;
+
+}
+
+.bst-right-box img {
+    width: 100%;
+}

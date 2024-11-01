@@ -1,0 +1,140 @@
+.container-userprofile{
+.container-profile {
+    display: flex;
+    z-index:1;
+    padding: 40px 40px 40px 40px;
+}
+/*  sidebar */
+.sidebar {
+    width: 200px;
+    background: #ffffff;
+    padding: 20px;
+    color:red;
+    margin-top: 10px;
+    border-right: 1px solid #ccc;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: #f35c5c;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border: 1px solid #dfdbdb;
+    margin-top: 5px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a:target {
+    border: 1px solid #f35c5c;
+}
+
+
+.main-profile{
+    margin-left: 40px;   
+}
+.tab-content{
+  width: auto;
+}
+
+
+/*  đơn hàng */
+.orders-table {
+    width: 1170px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.orders-table th,
+.orders-table td {
+    text-align: center;
+    padding: 20px 15px; 
+    border: 1px solid gray;
+}
+
+.orders-table thead {
+    background-color: #9b161d;
+    color: #ffffff;
+}
+
+.orders-table tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.orders-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Phong cách cho các chi tiết */
+
+.label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.value {
+    color: black;
+}
+/* .edit-info-form {
+  width: 500px;
+  margin: auto; 
+  padding: 20px;
+  border-radius: 8px;
+} */
+
+
+.tab-content {
+  width: 500px;
+}
+.edit-info-btn {
+    padding: 10px 20px;
+    background-color: #9b161d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .edit-info-btn:hover {
+    background-color: #9b161d;
+  }
+  
+  .edit-info-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 100px;
+  }
+  .h1-edit-form{
+    text-align: center;
+  }
+  .edit-info-form form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .edit-info-form form input[type="password"]
+   {
+    width: 150%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .edit-info-form form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #9b161d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-info-form form input[type="submit"]:hover {
+    background-color: #218838;
+  }
+}
